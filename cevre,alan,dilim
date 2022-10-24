@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class daire {
+    public static void main(String[] args) {
+        Scanner inp=new Scanner(System.in);
+        int r,aci;
+        float cevre, alan,dilimAlan;
+        float pi =3.14f;
+
+        System.out.print("Yarıcap = ");
+        r=inp.nextInt();
+
+        System.out.print("Açı= ");
+        aci=inp.nextInt();
+
+        cevre=2*pi*r;
+        alan=pi*r*r;
+        dilimAlan=(pi*(r*r)*aci)/360;
+
+        System.out.println("Cevre= "+cevre);
+        System.out.println("Alan: "+ alan);
+        System.out.println("Dilimin alanı: "+dilimAlan);
+    }
+}
